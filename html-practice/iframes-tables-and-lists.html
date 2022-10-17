@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFrames, Tables and Lists</title>
-</head>
-<body>
-    <h1>IFames, Tables and Lists</h1>
-    <a href="index.html">Home Page</a>
-    <a href="links-and-images.html">Links and Images</a>
-    <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
-<!--
- this is an IFrame tg, which allows web developers to include web content from other websites into their own website.
-src is the location of the web content you want to include width and height define the size of the IFrame. frameborder
-take a value of 0(off) and 1 (on)
-to turn off or on the border around the IFrame
--->
-<p>Click this link to view the video below about saul goodman spinning for 1 hour</p>
-<p><a href="https://www.youtube.com/watch?v=jeM9yRJwKl8" target="iframe_a">Youtube.com</a></p>
-    <iframe src="https://www.youtube.com/embed/jeM9yRJwKl8" width="50%" height="600px" frameborder="0"
-    title="This is an IFrame that displays Saul Goodman spinning around."></iframe>
-<!--This in an HTML table.
-It starts with the table tag
--->
+  </head>
+  <body>
+    <header>
+      <h1>IFrames, Tables and Lists</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="links-and-images.html">Links and Images</a></li>
+          <li>
+            <a href="headings-and-paragarphs.html">Headings and Paragraphs</a>
+          </li>
+          <li><a href="Indentation.html">Indentation</a></li>
+          <li><a href="forms.html">form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--
+    this is an IFrame tg, which allows web developers to include web content from other websites into their own website.
+    src is the location of the web content you want to include width and height define the size of the IFrame. frameborder
+    take a value of 0(off) and 1 (on)
+    to turn off or on the border around the IFrame
+    -->
+    <p>
+      Click this link to view the video below about saul goodman spinning for 1
+      hour
+    </p>
+    <p>
+      <a href="https://www.youtube.com/watch?v=jeM9yRJwKl8" target="iframe_a"
+        >Youtube.com</a
+      >
+    </p>
+    <iframe
+      src="https://www.youtube.com/embed/jeM9yRJwKl8"
+      width="50%"
+      height="600px"
+      frameborder="0"
+      title="This is an IFrame that displays Saul Goodman spinning around."
+    ></iframe>
+    <!--This in an HTML table.
+    It starts with the table tag
+    -->
     <table>
       <!--
         Inside the table tag, you creat table rows with the tr tag.
@@ -34,11 +57,11 @@ It starts with the table tag
         -->
         <th>&nbsp;&nbsp;&nbsp;Favorite Foods&nbsp;&nbsp;&nbsp;</th>
         <th>&nbsp;&nbsp;&nbsp;Favorite Class's&nbsp;&nbsp;&nbsp;</th>
-        <th>&nbsp;&nbsp;&nbsp;Favorite Sports&nbsp;&nbsp;&nbsp; </th>
+        <th>&nbsp;&nbsp;&nbsp;Favorite Sports&nbsp;&nbsp;&nbsp;</th>
       </tr>
       <!-- Then, you create as many table rows of data as you wish... -->
       <tr>
-       <!--
+        <!--
         Inside each table row after the headings, you add table data (td tags)
         to the row.
         &nbsp; is an entitiy. Entitities are used to display special characters on a website.
@@ -57,16 +80,18 @@ It starts with the table tag
     </table>
     <p>Saul's favorite colors</p>
     <ol>
-        <li>Pink</li>
-        <li>Blue</li>
-        <li>Red</li>
-      </ol>
+      <li>Pink</li>
+      <li>Blue</li>
+      <li>Red</li>
+    </ol>
     <p>Saul's favorite foods</p>
-      <ul>
-        <li>Tacos</li>
-        <li>Bread</li>
-        <li>Soup</li>
-      </ul>
-      <p>&#169; Ethan Lowe</p>
-</body>
+    <ul>
+      <li>Tacos</li>
+      <li>Bread</li>
+      <li>Soup</li>
+    </ul>
+    <footer>
+      <p>&#169; 2022 Noah Jonatchick</p>
+    </footer>
+  </body>
 </html>
