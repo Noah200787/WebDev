@@ -5,54 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Batman Arkham City</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
   </head>
-  <header>
-      <h1>Batman Arkham City</h1>
-      <nav>
-        <ul>
-          
-        </ul>
-      </nav>
-    </header>
-  <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-</style>
-</head>
-<body>
-
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-
 
   <body style="background-color: gray">
-    
-
+    <h1>Batman Arkham City</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li>
+          <a href="Gameplay and screenshots.html">Gameplay and screenshots</a>
+        </li>
+      </ul>
+    </nav>
     <h2>The story and development</h2>
     <br />
     <p>
@@ -85,15 +75,14 @@ li a:hover {
     <br />
     <br />
     <label for="Crime Location">
-      Please Enter the City or Country You Suggest I Travel to
-      [required]:</label
-    >
+      Please enter the place you saw crime being commited [required]:
+    </label>
 
     <input type="text" name="Crime" id="Crime-location" required />
     <br />
     <br />
-    <label for="Crime-Amount"
-      >How much crime is there is the part of the city?[required]
+    <label for="Crime-Amount">
+      How many people are commiting the crime[required]
     </label>
     <input
       type="number"
