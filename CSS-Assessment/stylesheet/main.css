@@ -50,3 +50,15 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+#heading-block {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#heading-block {
+  margin: 30px 42%;
+  padding: 20px 30px;
+}
