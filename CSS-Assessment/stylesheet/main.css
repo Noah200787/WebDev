@@ -58,11 +58,8 @@ li a:hover {
 #heading-block {
   background-color: black;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#heading-block {
+  border: 5px solid gray;
   margin: 30px 42%;
   padding: 20px 30px;
+  text-align: center;
 }
