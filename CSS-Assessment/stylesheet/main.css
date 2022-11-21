@@ -8,11 +8,11 @@ body {
 
 #heading-over-image,
 .information-block {
-  background-color: black;
+  background-color: #000010;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  border: 10px solid gray;
+  border: 10px solid #7fefbd;
 }
 
 #heading-over-image {
@@ -21,7 +21,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  border: 5px solid gray;
+  border: 5px solid #7fefbd;
 }
 
 /* Centered text */
@@ -34,9 +34,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
-  border-top: 5px solid gray;
-  border-bottom: 5px solid gray;
+  background-color: #000010;
+  border-top: 5px solid #7fefbd;
+  border-bottom: 5px solid #7fefbd;
 }
 
 li {
@@ -52,14 +52,25 @@ li a {
 }
 
 li a:hover {
-  background-color: black;
+  background-color: #000010;
 }
 
 #heading-block {
-  background-color: black;
+  background-color: #000010;
   color: white;
-  border: 5px solid gray;
+  border: 5px solid #7fefbd;
   margin: 30px 42%;
   padding: 20px 30px;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p.a {
+  font-family: "Times New Roman", Times, serif;
 }
