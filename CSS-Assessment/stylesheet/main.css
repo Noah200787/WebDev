@@ -1,12 +1,12 @@
 body {
   margin: 0;
 }
-#container {
+.container {
   position: relative;
   height: 770px;
 }
 
-#heading-over-image,
+.heading-over-image,
 .information-block {
   background-color: #000010;
   color: white;
@@ -15,7 +15,7 @@ body {
   border: 10px solid #7fefbd;
 }
 
-#heading-over-image {
+.heading-over-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,4 +73,16 @@ h1 {
 
 p.a {
   font-family: "Times New Roman", Times, serif;
+}
+
+.big-black-line {
+  height: 50px;
+  background-color: #000010;
+  border-top: 5px solid #7fefbd;
+  margin-top: 5px;
+  border-bottom: 5px solid #7fefbd;
+}
+.treaty-timeline {
+  margin-left: 15%;
+  border: 10px solid #000010;
 }
