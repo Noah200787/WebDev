@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minnisota Vikings Football</title>
+  </head>
+  <body>
+    <!-- NOTE: the below comment is how a multiline comment should be written.-->
+    <!-- 
+    The three semantic tags that must be on every page you create
+    are header, main footer.
+
+    Semantic tag are containers. They need ACTUAL HTML elements inside them. 
+    Just putting text inside a footer without a p tag or h2 tag is not acceptable.
+    The exception is figcaption.
+    -->
+    <header>
+      <h1>Minnisota Vikings Fanpage</h1>
+      <nav>
+        <!-- ul>li*4>a used for making many links at once-->
+        <ul>
+          <li><a href="index.html"> Home Page</a></li>
+          <li><a href="Justin-Jefferson.html"></a>Justin Jefferson</li>
+          <li><a href="Kirk-Cousins.html"></a>Kirk Cousins</li>
+          <li><a href="Dalvin-Cook.html"></a>Dalvin Cook</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+        We create sections for areas of related content.
+      -->
+      <section>
+        <!-- inside semantic tags, we can use divs to further group content (continers inside containers)-->
+        <div>
+          <h2>Who are the Minnisota Vikings</h2>
+          <p>
+            The Minnesota Vikings are a professional American football team
+            based in Minneapolis. They compete in the National Football League
+            (NFL) as a member club of the National Football Conference (NFC)
+            North division.[7] Founded in 1960 as an expansion team, the team
+            began play the following year. They are named after the Vikings of
+            medieval Scandinavia, reflecting the prominent Scandinavian American
+            culture of Minnesota.[8] The team plays its home games at U.S. Bank
+            Stadium in the Downtown East section of Minneapolis.
+            <a
+              href="https://en.wikipedia.org/wiki/Minnesota_Vikings"
+              target="_blank"
+            >
+              -Wikipedia
+            </a>
+          </p>
+        </div>
+        <figure>
+          <figcaption>
+            The image below is an Image of Justin Jefferson and his teamate Adam
+            Thielen
+          </figcaption>
+          <img
+            src="images/18 and 19.png"
+            alt="Image of Justin Jefferson and his teamate Adam Thielen"
+          />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <!-- This is the correct way to put content inside a container.
+      This is the correct way to use text decoration tags.
+    -->
+      <p>
+        <small>&#169; Noah Jonatchick</small>
+      </p>
+    </footer>
+  </body>
+</html>

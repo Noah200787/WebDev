@@ -88,3 +88,10 @@ p.a {
   margin-left: 15%;
   border: 10px solid #000010;
 }
+.big-black-line {
+  height: 50px;
+  background-color: #000010;
+  border-top: 5px solid #7fefbd;
+  margin-top: 5px;
+  border-bottom: 5px solid #7fefbd;
+}
