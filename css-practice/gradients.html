@@ -6,9 +6,19 @@
     <title>Divs and Spans</title>
     <style>
       body {
-        color: white;
-        background-color: #e8f4f8;
+        color: black;
         margin: 0;
+        background: #6441a5; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2a0845,
+          #6441a5
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2a0845,
+          #6441a5
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
       h1 {
         text-align: center;
@@ -41,6 +51,7 @@
         background-color: white;
       }
       div {
+        background-color: white;
         width: auto;
         height: 200px;
         margin: 5px;
@@ -48,17 +59,6 @@
         border-radius: 5px;
         padding: 10px 20px;
         text-align: center;
-        background: #780206; /* fallback for old browsers */
-        background: -webkit-linear-gradient(
-          to right,
-          #061161,
-          #780206
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-          to right,
-          #061161,
-          #780206
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
       div p {
         padding: 5px 15px;
