@@ -57,7 +57,7 @@ nav li a:focus {
   color: #000010;
 }
 
-#heading-block {
+.heading-block {
   background-color: #000010;
   color: white;
   border: 5px solid #7fefbd;
