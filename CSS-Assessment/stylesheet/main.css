@@ -77,6 +77,10 @@ p.a {
   font-family: "Times New Roman", Times, serif;
 }
 
+p.b {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
 .big-black-line {
   height: 50px;
   background-color: #000010;
