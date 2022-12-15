@@ -73,13 +73,8 @@ h1 {
   text-transform: uppercase;
 }
 
-p.a {
+.p {
   font-family: "Times New Roman", Times, serif;
-}
-
-p.b {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
 }
 .big-black-line {
   height: 50px;
