@@ -28,6 +28,7 @@ body {
 .information-block {
   margin: 30px 10%;
   padding: 20px 30px;
+  letter-spacing: 2px;
 }
 ul {
   list-style-type: none;
