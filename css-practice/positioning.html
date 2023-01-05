@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transitions and Animations</title>
+    <title>Positioning</title>
     <style>
       /*
         This styles the content so that when we scroll on the website,
@@ -17,98 +17,25 @@
       body {
         background-color: #f5f5ff;
         color: midnightblue;
-        /*Part one*/
-
-        display: inline-block;
-
-        /* 
-          This styling is used to create the state before the animation occurs.
-          We want our body to be completely transparent and shifted up 100px
-          so that when the transition occurs the body can fade in and drop down
-          into place.
-        */
-        opacity: 0;
-        transform: translateY(-100px);
-
-        /*
-          This defines our animation.
-          
-          We define the animation-name as fade-in.
-          We define the animation-duration (how long the animation lasts) as 1 second.
-          We define the animation-timing-funtion (how the styling changes as it moves through the
-          animation) as ease-in, which means it will slowly start the animation and speed up to the
-          end.
-          We define the animation-delay as 2 seconds.
-          We define the animation-fill-mode (whether the styling is kept at the end of the animation
-          or not) to forwards, which means to keep the styling that is at the end of the animation.
-          Other animation properties that we do not define in this example are:
-          
-          animation-iteration-count - how many times you want your animation to run
-          
-          animation-direction - do you want your animation to go forward (normal)? Backward (reverse)? 
-                                Forward and then backward (alternate)? Backward and then forward 
-                                (alternate-reverse)?
-        */
-        -o-animation: fade-in 1s ease-in 2s forwards;
-        -moz-animation: fade-in 1s ease-in 2s forwards;
-        -webkit-animation: fade-in 1s ease-in 2s forwards;
-        animation: fade-in 1s ease-in 2s forwards;
-      }
-
-      @-o-keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(-100px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @-moz-keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(-100px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @-webkit-keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(-100px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* 
-        This defines the animation itself. We use @keyframes to show that we are creating an
-        animation and then we use the same name that we defined in the animation property (i.e., fade-in).
-        Then, we define the starting point of the animation (from) and the styling at the starting point.
-        Finally, we define the ending point of the animation (to) and the styling at the ending point.
-        NOTE: You can also define %s of where different styling occurs (i.e., 0%, 33%, 66%, 100%).
-      */
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(-100px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
       }
 
       nav {
         padding: 10px 0;
 
+        /*
+        The visibility preperty allows you to change whether an element is shown (visible) 
+        or not shown (hidden). this property will still save the space that is taken up by this element on the page 
+        */
+
+        /* Visibility: hidden;*/
+
+        /* 
+        The display property allows you to change wherher an element is a 
+        block element, inline element, inline-block element. and more
+        the value of none will make it so that the element does not display 
+        on the web page and it does not save the space that would be used by the element.
+        */
+        /*display: none;*/
         /*
           This is how we apply linear gradients to a polygonal area.
           
@@ -142,31 +69,17 @@
         color: #f5f5ff;
 
         /*
-          This defines a transition that occurs when a user interacts with the nav links.
-          
-          It creates a transition for background color (transition-property) between dark blue 
-          (#191970) and off-white (#f5f5ff) that lasts 0.5 seconds (transition-duration). It 
-          slowly enters and exits the transition (transition-timing-function: ease-in-out).
-          It also creates a transition for color (transition-property) between off-white (#f5f5ff) 
-          dark blue (#191970) and that lasts 0.5 seconds (transition-duration). It slowly enters 
-          and exits the transition (transition-timing-function: ease-in-out).
-          The one property we do not discuss below is transition-delay, which would delay
-          the transition by a specific amount of time.
+        in this example we had to change the anchors inside
+        our list items to be inline-block elements because
+        by default they are inline elements and inline elements
+        do not allow you to change the width and height of those elemments
+        
+        NOTE: This will be very important when we talk about flex grid later on.
         */
-        -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-        -moz-transitions: background-color 0.5s ease-in-out,
-          color 0.5s ease-in-out;
-        -webkit-transition: background-color 0.5s ease-in-out,
-          color 0.5s ease-in-out;
-        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+        display: inline-block;
       }
 
-      /*
-        These are the user actions that will start the transition.
-        The transition will change the background color and font color
-        smoothly because we change the background color and font color
-        inside this styling block. 
-      */
       nav a:hover,
       nav a:focus {
         background-color: #f5f5ff;
@@ -176,9 +89,40 @@
       h1 {
         text-align: center;
         font-size: 40px;
+
+        background-color: #f5f5ff;
+        color: darkorchid;
+
+        /* 
+          This styles the h1 to have sticky positioning.
+          Sticky positioning works like relative positioning (where an element
+          will be placed in the normal flow of the website) until the user
+          reaches the scroll position defined by the top, left, bottom, or right
+          CSS properties. 
+          
+          In this case, the heading will be in the normal flow of the website until
+          the user scrolls to the point where the heading reaches the top of the window.
+          At that point, the heading sticks to the top of the window.
+        */
+        position: sticky;
+
+        top: 0;
+
+        /* 
+          This z-index property makes it so that the heading shows up on top of every other element
+          that has a lower z-index value than 2.
+          NOTE: The z-index property ONLY works on POSITIONED elements (i.e., not static).
+        */
+        z-index: 2;
       }
 
       section {
+        /* 
+          This styles the section to appear like it is in the normal flow of the website.
+          However, if we choose, we can shift the element from its normal positioning
+          using the top, left, bottom, and right properties because it uses relative
+          positioning.
+        */
         position: relative;
 
         margin: 20px;
@@ -187,6 +131,20 @@
         height: 50vh;
 
         border-radius: 20px;
+      }
+
+      section:first-of-type {
+        /* 
+          This styles the first section element to be shifted from its normal position
+          by 100px from the top of its normal position and 150px from the left of its
+          normal position.
+        */
+        top: 100px;
+        left: 150px;
+
+        border: 10px black solid;
+
+        z-index: 1;
       }
 
       /*
@@ -199,6 +157,14 @@
         and right. Finally, aligns the text center.
       */
       div {
+        /* 
+          This styles the element to be positioned related to its nearest
+          positioned ancestor. Since the section elements are all positioned
+          relative, these divs are positioned in relation to the section they
+          are children of (i.e., inside of).
+          NOTE: If the section tag was not positioned (i.e., had static positioning),
+                these divs would be positioned related to the body itself.
+        */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -347,26 +313,21 @@
         </li>
         <li><a href="gradients.html" class="nav-link">Gradients</a></li>
         <li><a href="transforms.html" class="nav-link">Transforms</a></li>
-        <li>
-          <a href="transitions-and-animations.html" class="nav-link">
-            Transitions and Animations
-          </a>
-        </li>
       </ul>
     </nav>
 
     <main>
-      <h1>Transitions and Animations</h1>
+      <h1>Positioning</h1>
 
       <!-- 
-        NOTE: This is NOT the proper way to use a div because I have not used all
-        the proper semantic tags yet.
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
         This is a div, which is short for division. It is a block element that acts
         like a container for multiple block elements.
       -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -385,9 +346,15 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -406,9 +373,15 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -427,9 +400,15 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -448,9 +427,15 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -469,9 +454,15 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
@@ -490,9 +481,42 @@
         </div>
       </section>
 
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
       <section>
         <div>
-          <p>This page shows the use of gradients.</p>
+          <p>This page shows the use of different position values.</p>
+
+          <p>
+            Does this paragraph have the same styling as my other paragraph?
+          </p>
+
+          <!-- 
+            This demonstrates the use of span, which is an inline element used to
+            group multiple inline elements. It can also be used to style specific
+            words or sets of words inside other HTML elements, which is how it is
+            being used in this context.
+          -->
+          <p id="styled-by-id">
+            This paragraph will show the effect of giving an element an ID and
+            <span>styling</span> that ID.
+          </p>
+        </div>
+      </section>
+
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because it wraps around all the content
+        in the section.
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
+      <section>
+        <div>
+          <p>This page shows the use of different position values.</p>
 
           <p>
             Does this paragraph have the same styling as my other paragraph?
