@@ -1,3 +1,7 @@
+/* 
+Css for all HTML fonts 
+*/
+
 html {
   font-size: 62.5%;
 }
@@ -10,11 +14,18 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.6rem;
 }
+
+/*
+Css for background images to make it so the images fit the background
+*/
 .background-image-and-text {
   position: relative;
   height: 770px;
 }
 
+/* 
+Css for text boxes throughout all of the website so the website looks good
+*/
 .heading-over-image,
 .information-block {
   background-color: #252525;
@@ -39,6 +50,9 @@ body {
   padding: 20px 30px;
   letter-spacing: 2px;
 }
+/* 
+Css to make the Nav bar work and look decently well 
+*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -67,6 +81,9 @@ nav li a:focus {
   color: #252525;
 }
 
+/* 
+For heading blocks used for highlighting the H1 or H2 in the web page 
+*/
 .heading-block {
   background-color: #252525;
   color: rgba(255, 255, 255, 0.87);
@@ -75,6 +92,9 @@ nav li a:focus {
   padding: 20px 30px;
   text-align: center;
 }
+/* 
+Css for all h1 to make them all the extact same and make it so it works well 
+*/
 
 h1 {
   text-align: center;
@@ -83,6 +103,10 @@ h1 {
   text-transform: uppercase;
 }
 
+/* 
+Css for Big-black-line which is used as a divider for all different text 
+*/
+
 .big-black-line {
   height: 50px;
   background-color: #252525;
@@ -90,14 +114,12 @@ h1 {
   margin-top: 5px;
   border-bottom: 5px solid #7fefbd;
 }
+
+/* 
+Css for the border of treaty-timeline image 
+*/
+
 .treaty-timeline {
   margin-left: 15%;
   border: 10px solid #252525;
-}
-.big-black-line {
-  height: 50px;
-  background-color: #252525;
-  border-top: 5px solid #7fefbd;
-  margin-top: 5px;
-  border-bottom: 5px solid #7fefbd;
 }
