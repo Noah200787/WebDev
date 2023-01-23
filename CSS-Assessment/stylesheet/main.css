@@ -1,14 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  line-height: 140%;
+  word-spacing: 120%;
+}
 body {
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
 }
-.container {
+.background-image-and-text {
   position: relative;
   height: 770px;
 }
 
 .heading-over-image,
 .information-block {
-  background-color: #000010;
+  background-color: #252525;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -35,7 +44,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000010;
+  background-color: #252525;
   border-top: 5px solid #7fefbd;
   border-bottom: 5px solid #7fefbd;
 }
@@ -46,7 +55,7 @@ li {
 
 nav li a {
   display: block;
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,44 +63,40 @@ nav li a {
 
 nav li a:hover,
 nav li a:focus {
-  background-color: white;
-  color: #000010;
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #252525;
 }
 
 .heading-block {
-  background-color: #000010;
-  color: white;
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.87);
   border: 5px solid #7fefbd;
-  margin: 30px 42%;
+  margin: 50px 42%;
   padding: 20px 30px;
   text-align: center;
-
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.p {
-  font-family: "Times New Roman", Times, serif;
-}
 .big-black-line {
   height: 50px;
-  background-color: #000010;
+  background-color: #252525;
   border-top: 5px solid #7fefbd;
   margin-top: 5px;
   border-bottom: 5px solid #7fefbd;
 }
 .treaty-timeline {
   margin-left: 15%;
-  border: 10px solid #000010;
+  border: 10px solid #252525;
 }
 .big-black-line {
   height: 50px;
-  background-color: #000010;
+  background-color: #252525;
   border-top: 5px solid #7fefbd;
   margin-top: 5px;
   border-bottom: 5px solid #7fefbd;
